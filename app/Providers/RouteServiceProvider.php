@@ -39,6 +39,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->mapWebRoutes($router);
         $router->model('user', 'App\User');
+        $router->model('cake', 'App\Cake');
         //
     }
 

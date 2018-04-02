@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 Route::resource('user', 'UserController',
     ['only' => ['index', 'store', 'update', 'destroy', 'show']]);
+
+Route::resource('cake', 'CakeController',
+    ['only' => ['index', 'store', 'update', 'destroy', 'show']]);
