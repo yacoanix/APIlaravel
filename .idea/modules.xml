@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/api_lara.iml" filepath="$PROJECT_DIR$/.idea/api_lara.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../proyecto/.idea/proyecto.iml" filepath="$PROJECT_DIR$/../proyecto/.idea/proyecto.iml" />
     </modules>
   </component>
 </project>

@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('user', 'UserController',
+    ['only' => ['index', 'store', 'update', 'destroy', 'show']]);
