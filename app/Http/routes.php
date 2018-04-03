@@ -20,3 +20,6 @@ Route::resource('user', 'UserController',
 
 Route::resource('cake', 'CakeController',
     ['only' => ['index', 'store', 'update', 'destroy', 'show']]);
+
+Route::resource('api', 'ApiController',
+    ['only' => ['store']]);

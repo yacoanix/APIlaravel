@@ -20,7 +20,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\Api::class, function (Faker\Generator $faker) {
+$factory->define(App\ApiKey::class, function (Faker\Generator $faker) {
     return [
         'api_token'=> str_random(40),
     ];

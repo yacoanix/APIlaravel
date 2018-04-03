@@ -4,7 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Api extends Model
+class Token extends Model
 {
     protected $fillable = ['api_token'];
+
 }

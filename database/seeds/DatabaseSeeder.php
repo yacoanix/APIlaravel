@@ -11,6 +11,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         factory('App\User', 10)->create();
-        //factory('App\Api', 10)->create();
+        //factory('App\ApiKey', 10)->create();
     }
 }
