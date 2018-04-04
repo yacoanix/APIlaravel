@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use App\Token;
 
 class VerifyAccessKey
 {
@@ -19,7 +20,14 @@ class VerifyAccessKey
         $key = $request->headers->get('api_key');
         // Si coincide con el valor almacenado en la aplicacion
         // la aplicacion se sigue ejecutando
-        if (isset($key) == env('API_KEY')) {
+        $regist=false;
+        $tokens = Token::all();
+        foreach($tokens as $token){
+            if($token==isset($key)){
+                $regist=true;
+            }
+        }
+        if ($regist==true) {
             return $next($request);
         } else {
             // Si falla devolvemos el mensaje de error
